@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS Quick Reference Guide</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>HTML & CSS Quick Reference Guide</h1>
+      <p>A comprehensive guide to essential HTML tags and CSS properties.</p>
+      <a href="#html-tags" class="btn">Explore HTML Tags</a>
+      <a href="#css-properties" class="btn">Explore CSS Properties</a>
+    </div>
+  </header>
+
+  <!-- Horizontal Rule to Separate Header and Main Content -->
+  <hr>
+
+  <!-- Main Content Section -->
+  <main class="container">
+    <!-- HTML Tags Section -->
+    <section id="html-tags">
+      <h2>HTML Tags</h2>
+      <p>Below are some commonly used HTML tags with examples:</p>
+
+      <!-- Example 1: Headings -->
+      <article class="example example-1">
+        <h3>1. Headings: <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></h3>
+        <p>Headings are used to define the structure of your content. <code>&lt;h1&gt;</code> is the most important, and <code>&lt;h6&gt;</code> is the least.</p>
+        <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;h3&gt;Sub-subheading&lt;/h3&gt;</code></pre>
+      </article>
+
+      <!-- Example 2: Paragraph -->
+      <article class="example example-2">
+        <h3>2. Paragraph: <code>&lt;p&gt;</code></h3>
+        <p>The <code>&lt;p&gt;</code> tag is used to define a paragraph.</p>
+        <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+      </article>
+
+      <!-- Example 3: Anchor -->
+      <article class="example example-3">
+        <h3>3. Anchor: <code>&lt;a&gt;</code></h3>
+        <p>The <code>&lt;a&gt;</code> tag is used to create hyperlinks.</p>
+        <pre><code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+      </article>
+
+      <!-- Example 4: Image -->
+      <article class="example example-4">
+        <h3>4. Image: <code>&lt;img&gt;</code></h3>
+        <p>The <code>&lt;img&gt;</code> tag is used to embed images.</p>
+        <pre><code>&lt;img src="image.jpg" alt="Description"&gt;</code></pre>
+      </article>
+
+      <!-- Example 5: Unordered List -->
+      <article class="example example-5">
+        <h3>5. Unordered List: <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code></h3>
+        <p>The <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> tags are used to create bullet-point lists.</p>
+        <pre><code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      </article>
+
+      <!-- Example 6: Ordered List -->
+      <article class="example example-6">
+        <h3>6. Ordered List: <code>&lt;ol&gt;</code> and <code>&lt;li&gt;</code></h3>
+        <p>The <code>&lt;ol&gt;</code> and <code>&lt;li&gt;</code> tags are used to create numbered lists.</p>
+        <pre><code>&lt;ol&gt;
+  &lt;li&gt;First Item&lt;/li&gt;
+  &lt;li&gt;Second Item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+      </article>
+
+      <!-- Example 7: Division -->
+      <article class="example example-7">
+        <h3>7. Division: <code>&lt;div&gt;</code></h3>
+        <p>The <code>&lt;div&gt;</code> tag is used to group content for styling.</p>
+        <pre><code>&lt;div class="container"&gt;
+  &lt;p&gt;This is inside a div.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+      </article>
+
+      <!-- Example 8: Span -->
+      <article class="example example-8">
+        <h3>8. Span: <code>&lt;span&gt;</code></h3>
+        <p>The <code>&lt;span&gt;</code> tag is used to style inline content.</p>
+        <pre><code>&lt;p&gt;This is a &lt;span class="highlight"&gt;highlighted&lt;/span&gt; word.&lt;/p&gt;</code></pre>
+      </article>
+
+      <!-- Example 9: Table -->
+      <article class="example example-9">
+        <h3>9. Table: <code>&lt;table&gt;</code></h3>
+        <p>The <code>&lt;table&gt;</code> tag is used to create tables.</p>
+        <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+      </article>
+
+      <!-- Example 10: Form -->
+      <article class="example example-10">
+        <h3>10. Form: <code>&lt;form&gt;</code></h3>
+        <p>The <code>&lt;form&gt;</code> tag is used to create forms.</p>
+        <pre><code>&lt;form&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+      </article>
+    </section>
+
+    <!-- Horizontal Rule to Separate HTML and CSS Sections -->
+    <hr>
+
+    <!-- CSS Properties Section -->
+    <section id="css-properties">
+      <h2>CSS Properties</h2>
+      <p>Below are some commonly used CSS properties with examples:</p>
+
+      <!-- Example 1: color -->
+      <article class="example example-11">
+        <h3>1. <code>color</code></h3>
+        <p>Sets the text color.</p>
+        <pre><code>p {
+  color: #ff6f61;
+}</code></pre>
+      </article>
+
+      <!-- Example 2: background-color -->
+      <article class="example example-12">
+        <h3>2. <code>background-color</code></h3>
+        <p>Sets the background color.</p>
+        <pre><code>body {
+  background-color: #f4f4f4;
+}</code></pre>
+      </article>
+
+      <!-- Example 3: font-size -->
+      <article class="example example-13">
+        <h3>3. <code>font-size</code></h3>
+        <p>Sets the size of the text.</p>
+        <pre><code>h1 {
+  font-size: 2.5rem;
+}</code></pre>
+      </article>
+
+      <!-- Example 4: margin -->
+      <article class="example example-14">
+        <h3>4. <code>margin</code></h3>
+        <p>Sets the margin around an element.</p>
+        <pre><code>div {
+  margin: 20px;
+}</code></pre>
+      </article>
+
+      <!-- Example 5: padding -->
+      <article class="example example-15">
+        <h3>5. <code>padding</code></h3>
+        <p>Sets the padding inside an element.</p>
+        <pre><code>div {
+  padding: 10px;
+}</code></pre>
+      </article>
+
+      <!-- Example 6: border -->
+      <article class="example example-16">
+        <h3>6. <code>border</code></h3>
+        <p>Sets the border around an element.</p>
+        <pre><code>div {
+  border: 1px solid #333;
+}</code></pre>
+      </article>
+
+      <!-- Example 7: text-align -->
+      <article class="example example-17">
+        <h3>7. <code>text-align</code></h3>
+        <p>Aligns text horizontally.</p>
+        <pre><code>p {
+  text-align: center;
+}</code></pre>
+      </article>
+
+      <!-- Example 8: display -->
+      <article class="example example-18">
+        <h3>8. <code>display</code></h3>
+        <p>Controls the layout behavior of an element.</p>
+        <pre><code>div {
+  display: flex;
+}</code></pre>
+      </article>
+    </section>
+  </main>
+
+  <!-- Horizontal Rule to Separate Main Content and Footer -->
+  <hr>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 HTML & CSS Quick Reference Guide. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
