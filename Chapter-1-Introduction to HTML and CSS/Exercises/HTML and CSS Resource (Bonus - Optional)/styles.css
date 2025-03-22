@@ -91,7 +91,7 @@ section p {
 
 /* Code Block Styles */
 pre {
-  background-color: #2d2d2d; /* Dark background for code blocks */
+  background-color: #4c4d47; /* Dark background for code blocks */
   padding: 15px;
   border-radius: 5px;
   overflow-x: auto;
@@ -99,7 +99,7 @@ pre {
 
 code {
   font-family: 'Courier New', Courier, monospace;
-  color: #ffcc00; /* Yellow text for code */
+  color: #ffc000; /* Yellow text for code */
 }
 
 /* Footer Styles */
