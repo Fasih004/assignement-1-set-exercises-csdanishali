@@ -18,11 +18,11 @@ body {
 
 /* Header Styles */
 header {
-  background: #fc4b3b; /* Semi-transparent coral background */
+  background: #fcac3b; /* Semi-transparent coral background */
   color: #fff;
   padding: 40px 0;
   text-align: center;
-  border-bottom: 5px solid #e65a50e6; /* Semi-transparent darker coral border */
+  border-bottom: 5px solid #d3c3ad; /* Semi-transparent darker coral border */
 }
 
 header h1 {
