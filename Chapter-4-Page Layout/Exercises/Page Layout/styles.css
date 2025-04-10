@@ -1,67 +1,77 @@
+/* CSS Reset: Remove default margin and padding from all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
+  /* Ensure full height and set default font styles */
   html, body {
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Body font */
     font-weight: 400;
-    color: #000000;
+    color: #000000; /* Default text color */
   }
   
+  /* Make body take full height and structure page layout */
   body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #ffffff; /* Page background */
   }
   
+  /* Header styles */
   header {
-    background-color: #17072b;
-    color: #ffffff;
+    background-color: #17072b; /* Dark purple background */
+    color: #ffffff; /* White text */
     text-align: center;
     padding: 20px 0;
-    font-family: Tahoma, sans-serif;
-    font-weight: 700;
-    height: 100px;
+    font-family: Tahoma, sans-serif; /* Heading font */
+    font-weight: 700; /* Bold heading text */
+    height: 100px; /* Fixed height */
   }
   
+  /* Main site title in header */
   header h1 {
     margin: 0;
     text-decoration: underline;
     font-size: 32px;
   }
   
+  /* Navigation list styles */
   nav ul {
-    list-style: none;
+    list-style: none; /* Remove bullets */
     margin-top: 10px;
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: center; /* Center nav items */
+    gap: 30px; /* Space between links */
   }
   
+  /* Navigation links */
   nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 400; /* Normal weight to override bold header */
   }
   
+  /* Main content layout */
   main {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     width: 100%;
     height: auto;
-    flex-grow: 1;
+    flex-grow: 1; /* Allows main to expand and push footer down */
   }
   
+  /* Welcome section */
   .welcome {
-    width: 60%;
+    width: 60%; /* Takes 60% of main's width */
   }
   
+  /* Welcome section heading */
   .welcome h2 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -69,25 +79,29 @@
     font-weight: 700;
   }
   
+  /* Welcome section text */
   .welcome p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 10px;
   }
   
+  /* Welcome section image */
   .welcome img {
-    width: 100%;
+    width: 100%; /* Responsive width */
     height: auto;
     margin-top: 10px;
   }
   
+  /* Line-up section */
   .line-up {
-    width: 35%;
-    background-color: #172d67;
+    width: 35%; /* Takes 35% of main's width */
+    background-color: #172d67; /* Blue background */
     color: #ffffff;
     padding: 20px;
   }
   
+  /* Line-up section heading */
   .line-up h2 {
     font-size: 22px;
     margin-bottom: 15px;
@@ -95,28 +109,33 @@
     font-weight: 700;
   }
   
+  /* Line-up list styles */
   .line-up ul {
-    padding-left: 20px;
-    margin: 20px 0;
+    padding-left: 20px; /* Indent list */
+    margin: 20px 0; /* Space above and below list */
   }
   
+  /* Individual list items */
   .line-up li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Space between items */
   }
   
+  /* Container for line-up images */
   .line-up-images {
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    justify-content: space-between; /* Space between two images */
+    margin-top: 10px; /* Gap from text above */
   }
   
+  /* Line-up images */
   .line-up img {
-    width: 48%;
-    height: auto;
+    width: 48%; /* Each image takes up ~half of container */
+    height: auto; /* Maintain aspect ratio */
   }
   
+  /* Footer styles */
   footer {
-    background-color: #8c15e9;
+    background-color: #8c15e9; /* Footer purple */
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
