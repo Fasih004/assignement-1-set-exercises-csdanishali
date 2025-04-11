@@ -6,7 +6,7 @@
   }
   
   /* Ensure full height and set default font styles */
-  html, body {
+  body {
     height: 100%;
     font-family: Arial, sans-serif; /* Body font */
     font-weight: 400;
@@ -60,7 +60,7 @@
   main {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 0;
     width: 100%;
     height: auto;
     flex-grow: 1; /* Allows main to expand and push footer down */
@@ -69,6 +69,7 @@
   /* Welcome section */
   .welcome {
     width: 60%; /* Takes 60% of main's width */
+    padding-left: 40px; /* Space from left edge */
   }
   
   /* Welcome section heading */
