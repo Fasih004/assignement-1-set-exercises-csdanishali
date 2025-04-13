@@ -1,0 +1,106 @@
+/* BASE STYLES            */
+body {
+    font-family: 'Impact', 'Arial Black', sans-serif; /* Bold, attention-grabbing font */
+    background-color: #121212; /* Dark background for contrast */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add some spacing around edges */
+    color: white; /* White text for readability */
+    text-align: center; /* Center all content */
+    background-image: url('background.png'); /* Custom background image */
+    background-size: cover; /* Ensure background covers entire area */
+    background-attachment: fixed; /* Fixed background for scrolling */
+}
+
+/* Main heading style */
+h1 {
+    font-size: 42px; /* Large, prominent size */
+    color: #ff006e; /* Vibrant pink color */
+    margin-bottom: 10px; /* Space below heading */
+    text-shadow: 0 0 10px #ff006e80; /* Glowing effect */
+    letter-spacing: 1px; /* Slightly spaced letters */
+}
+
+/* Header container styling */
+header {
+    background-color: #1e1e1e; /* Dark gray background */
+    padding: 20px; /* Internal spacing */
+    border-radius: 12px; /* Rounded corners */
+    margin-bottom: 30px; /* Space below header */
+    box-shadow: 0 4px 15px #00000060; /* Subtle shadow for depth */
+    border: 1px solid #333333; /* Thin border */
+}
+
+/* SOUNDBOARD GRID        */
+.soundboard {
+    display: grid; /* Use CSS Grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+    max-width: 1100px; /* Maximum width of soundboard */
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+/* SAMPLE BUTTONS         */
+.sample {
+    background: linear-gradient(145deg, #3a86ff, #2667cc); /* Blue gradient background */
+    color: white; /* White text */
+    padding: 25px 15px; /* Button padding */
+    border-radius: 12px; /* Rounded corners */
+    text-align: center; /* Center button content */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 5px 15px #3a86ff40; /* Blue glow effect */
+    border: none; /* No border */
+    position: relative; /* Positioning context */
+    overflow: hidden; /* Hide overflow for effects */
+}
+
+/* Shine effect overlay */
+.sample::before {
+    content: ''; /* Required for pseudo-element */
+    position: absolute; /* Absolute positioning */
+    top: -50%; /* Position above button */
+    left: -50%; /* Position left of button */
+    width: 200%; /* Double width for animation */
+    height: 200%; /* Double height for animation */
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0) 60%
+    ); /* Diagonal gradient */
+    transform: rotate(30deg); /* Angle the gradient */
+    transition: all 0.5s ease; /* Transition for smooth appearance */
+    opacity: 0; /* Initially hidden */
+}
+
+/* Hover state */
+.sample:hover {
+    transform: translateY(-5px); /* Lift button slightly */
+    box-shadow: 0 8px 20px #3a86ff60; /* Enhanced glow */
+}
+
+/* Show shine effect on hover */
+.sample:hover::before {
+    opacity: 1; /* Make visible */
+    animation: shine 1.5s infinite; /* Continuous shine animation */
+}
+
+/* Button title text */
+.sample h2 {
+    margin: 0 0 8px 0; /* Spacing */
+    font-size: 22px; /* Large readable size */
+    position: relative; /* Positioning context */
+}
+
+/* Button duration text */
+.sample p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Smaller size */
+    opacity: 0.9; /* Slightly transparent */
+    position: relative; /* Positioning context */
+}
+
+.sample.active {
+    background: linear-gradient(145deg, #ff006e, #cc0058); /* Pink gradient */
+    box-shadow: 0 0 20px #ff006e80; /* Pink glow */
+    transform: scale(0.98); /* Slight press effect */
+}
