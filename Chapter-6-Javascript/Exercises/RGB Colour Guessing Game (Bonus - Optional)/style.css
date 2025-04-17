@@ -1,0 +1,196 @@
+/* Reset default browser styles */
+* {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding in element dimensions */
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    background: linear-gradient(135deg, #2d3436, #1e272e); /* Dark gradient background */
+    color: #f5f6fa; /* Light text color */
+    min-height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add some spacing around edges */
+}
+
+/* Main game container */
+.game-container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect behind container */
+    border-radius: 20px; /* Rounded corners */
+    padding: 30px; /* Inner spacing */
+    width: 100%; /* Full width */
+    max-width: 500px; /* Maximum width */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+    text-align: center; /* Center text */
+}
+
+/* Header section */
+.header {
+    margin-bottom: 30px; /* Space below header */
+}
+
+/* Main title */
+.header h1 {
+    font-size: 2.8rem; /* Large font size */
+    font-weight: 700; /* Bold weight */
+    margin-bottom: 5px; /* Small space below */
+    background: linear-gradient(to right, #6c5ce7, #a29bfe); /* Purple gradient */
+    background-clip: text; /* Standard property */
+    color: transparent; /* Hide text color to show gradient */
+}
+
+/* "Mind" part of title */
+.header h1 span {
+    font-weight: 400; /* Normal weight for contrast */
+}
+
+/* Subtitle */
+.subtitle {
+    color: #a29bfe; /* Light purple */
+    margin-bottom: 20px; /* Space below */
+    font-size: 1rem; /* Normal size */
+    letter-spacing: 1px; /* Slightly spaced letters */
+}
+
+/* Stats container */
+.stats {
+    display: flex; /* Flex layout */
+    justify-content: space-around; /* Evenly space boxes */
+    margin: 0 auto; /* Center horizontally */
+    max-width: 400px; /* Limit width */
+}
+
+/* Individual stat boxes */
+.stat-box {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 15px; /* Inner spacing */
+    min-width: 80px; /* Minimum width */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+}
+
+/* Stat labels */
+.stat-label {
+    display: block; /* Block display */
+    font-size: 0.8rem; /* Small size */
+    color: #a29bfe; /* Light purple */
+    margin-bottom: 5px; /* Small space below */
+}
+
+/* Stat values */
+.stat-value {
+    font-size: 1.3rem; /* Larger size */
+    font-weight: 600; /* Semi-bold */
+}
+
+/* Main game area */
+.game-area {
+    margin-top: 10px; /* Small space above */
+}
+
+/* RGB code display */
+.rgb-display {
+    font-size: 1.8rem; /* Large size */
+    font-weight: bold; /* Bold text */
+    margin: 30px auto; /* Vertical and centered horizontal spacing */
+    padding: 15px 25px; /* Inner spacing */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Light border */
+    width: fit-content; /* Fit content width */
+}
+
+/* Color options container */
+.options-container {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 15px; /* Space between options */
+    margin-bottom: 25px; /* Space below */
+}
+
+/* Individual color options */
+.color-option {
+    height: 70px; /* Fixed height */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: all 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 2px solid transparent; /* Invisible border */
+}
+
+/* Color option hover effect */
+.color-option:hover {
+    transform: translateY(-5px); /* Move up slightly */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Feedback message area */
+.message {
+    min-height: 30px; /* Minimum height */
+    font-size: 1.2rem; /* Larger text */
+    margin: 20px 0; /* Vertical spacing */
+    font-weight: bold; /* Bold text */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Correct answer style */
+.correct {
+    color: #00b894; /* Green color */
+}
+
+/* Incorrect answer style */
+.incorrect {
+    color: #d63031; /* Red color */
+}
+
+/* Game over overlay */
+.game-over {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    top: 0; /* Full screen coverage */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    display: flex; /* Flex centering */
+    justify-content: center;
+    align-items: center;
+    z-index: 100; /* Above other content */
+}
+
+/* Game over content box */
+.game-over-content {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Blur effect */
+    padding: 30px; /* Inner spacing */
+    border-radius: 15px; /* Rounded corners */
+    max-width: 400px; /* Maximum width */
+    width: 90%; /* Responsive width */
+    text-align: center; /* Center text */
+}
+
+/* Neon button style */
+.neon-button {
+    background: linear-gradient(to right, #6c5ce7, #a29bfe); /* Purple gradient */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 12px 25px; /* Button padding */
+    font-size: 1.2rem; /* Text size */
+    border-radius: 50px; /* Pill shape */
+    cursor: pointer; /* Pointer cursor */
+    transition: all 0.3s ease; /* Smooth transitions */
+    margin-top: 20px; /* Space above */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+}
+
+/* Neon button hover effect */
+.neon-button:hover {
+    transform: translateY(-3px); /* Move up slightly */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
