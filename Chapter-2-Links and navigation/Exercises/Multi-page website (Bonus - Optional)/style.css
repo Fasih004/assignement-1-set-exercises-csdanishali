@@ -1,0 +1,99 @@
+/* Import Netflix-style fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  background-color: #0b0b0b;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #e50914;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.navbar .logo {
+  height: 45px;
+}
+
+/* Navbar Links */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+  transition: opacity 0.3s;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+/* Main Content Area */
+.content {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* Section Styling */
+.netflix-section {
+  margin-bottom: 40px;
+}
+
+.netflix-section h2 {
+  color: #e50914;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.netflix-section ul {
+  padding-left: 20px;
+}
+
+/* Button Link */
+.button-link {
+  display: inline-block;
+  background-color: #e50914;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.button-link:hover {
+  background-color: #b20710;
+}
+
+/* Footer */
+.footer {
+  background-color: #141414;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  color: #888;
+}
