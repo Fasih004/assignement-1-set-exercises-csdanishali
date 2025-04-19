@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Partridge Soundboard</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Impact&family=Arial+Black&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Alan Partridge Soundboard</h1>
+        <p>Click any sample to play</p>
+    </header>
+
+    <div class="container">
+        <!-- Text-to-Speech Panel -->
+        <div class="tts-panel">
+            <h2>Text-to-Speech</h2>
+            <textarea id="tts-text" placeholder="Type text here..."></textarea>
+            <button id="tts-play">Speak It</button>
+            <div class="volume-control">
+                <label for="tts-volume">Volume:</label>
+                <input type="range" id="tts-volume" min="0" max="1" step="0.1" value="1">
+            </div>
+        </div>
+
+        <!-- Soundboard -->
+        <div class="soundboard-container">
+            <div class="bank-controls">
+                <button id="prev-bank" class="nav-arrow" disabled>
+                    <img src="images/left-arrow.png" alt="Previous">
+                </button>
+                <span class="bank-indicator">Bank 1</span>
+                <button id="next-bank" class="nav-arrow">
+                    <img src="images/right-arrow.png" alt="Next">
+                </button>
+            </div>
+
+            <div class="soundboard" id="soundboard">
+                <!-- Samples will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
