@@ -1,133 +1,104 @@
-/* General Styles */
+/* ===== Base Styles ===== */
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #000; /* Black background */
-  color: #fff;
-  line-height: 1.6;
+  margin: 0; /* Remove default browser margin */
+  font-family: 'Helvetica Neue', sans-serif; /* Clean modern font */
+  background-color: #000; /* Full black background for Netflix vibe */
+  color: #fff; /* White text for contrast */
 }
 
-.container {
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+/* ===== Navbar Styles ===== */
+.navbar {
+  background-color: #e50914; /* Netflix signature red */
+  padding: 1.5rem; /* Top and bottom padding for spacing */
+  text-align: center; /* Center the title and nav links */
 }
 
-/* Header Styles */
-header {
-  background: #e50914; /* Netflix red */
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+.navbar h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 2rem; /* Large title size */
+  font-weight: 800; /* Bold for emphasis */
+  color: #fff; /* Keep title text white */
 }
 
-header h1 {
-  font-family: 'Creepster', cursive;
-  font-size: 3rem;
-  margin: 0;
-  text-shadow: 2px 2px 4px #00000080;
+/* ===== Nav Links ===== */
+.navbar ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin-top: 1rem; /* Space between title and links */
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center the nav items */
+  gap: 2rem; /* Space between links */
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 10px;
+.navbar a {
+  color: #fff; /* White links */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make nav links pop */
+  transition: color 0.3s; /* Smooth hover transition */
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
+.navbar a:hover {
+  color: #000; /* Black hover effect for contrast */
 }
 
-nav ul li a:hover {
-  color: #ffcc00; /* Yellow on hover */
+/* ===== Main Content Container ===== */
+.content {
+  padding: 2rem; /* Space around content */
+  max-width: 1000px; /* Keep content centered and readable */
+  margin: 0 auto; /* Center content horizontally */
 }
 
-/* Section Styles */
-.section {
-  padding: 40px 0;
-  border-bottom: 1px solid #444; /* Dark border between sections */
+/* ===== Section Styles ===== */
+.netflix-section {
+  margin-bottom: 3rem; /* Space between sections */
+  border-top: 2px solid #222; /* Subtle border to divide sections */
+  padding-top: 2rem; /* Space inside each section */
 }
 
-.section h2 {
-  font-family: 'Creepster', cursive;
-  font-size: 2.5rem;
-  color: #e50914; /* Netflix red */
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px #00000080;
+/* Section Headings */
+.netflix-section h2 {
+  color: #e50914; /* Red headings for consistency */
+  font-size: 1.8rem; /* Slightly larger heading size */
+  margin-bottom: 1rem; /* Space below heading */
 }
 
-.section p, .section ul {
-  font-size: 1.1rem;
-  color: #ccc;
+/* Lists in Sections */
+.netflix-section ul {
+  padding-left: 1.2rem; /* Indent for list items */
 }
 
-.section ul {
-  padding-left: 20px;
+.netflix-section li {
+  margin-bottom: 0.5rem; /* Space between list items */
 }
 
-.section ul li {
-  margin-bottom: 10px;
+/* ===== Button Section ===== */
+.center-button {
+  text-align: center; /* Center the button horizontally */
 }
 
-/* The Upside Down Section */
-.section.upside-down {
-  background: #e509141a; /* Slight red overlay */
-  padding: 30px;
-  border-radius: 10px;
-  margin: 20px 0;
+/* Styled Red Button Link */
+.button-link {
+  background-color: #e50914; /* Netflix red background */
+  color: white; /* White text for contrast */
+  padding: 0.8rem 2rem; /* Size of the button */
+  text-decoration: none; /* No underline */
+  border-radius: 5px; /* Rounded edges */
+  font-weight: bold; /* Bold text */
+  display: inline-block; /* Allows padding and margin */
+  transition: background-color 0.3s ease; /* Smooth color transition */
 }
 
-.section.upside-down p {
-  color: #fff;
-  font-style: italic;
+/* ===== Footer Styles ===== */
+.footer {
+  background-color: #111; /* Slightly lighter black for footer contrast */
+  padding: 2rem; /* Spacing inside the footer */
+  text-align: center; /* Center all text and button */
+  border-top: 2px solid #222; /* Subtle top border for separation */
 }
 
-/* Review Section */
-.review {
-  background: #1a1a1a; /* Dark background */
-  padding: 15px;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  border-left: 5px solid #e50914; /* Red accent */
+.footer p {
+  margin-bottom: 1rem; /* Space between text and button */
+  font-size: 1rem; /* Standard size */
+  color: #fff; /* Keep footer text white */
 }
 
-.review p {
-  font-size: 1rem;
-  color: #ccc;
-  margin: 0;
-}
-
-/* Button Styles */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #e50914; /* Netflix red */
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #b2070a; /* Darker red on hover */
-}
-
-/* Footer Styles */
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 30px;
-}
-
-footer p {
-  margin: 0;
-}
